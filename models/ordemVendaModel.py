@@ -7,7 +7,7 @@ from .funcionarioModel import Funcionario
 from .produtoModel import Produto
 
 
-class OrdemVenda:
+class Venda:
     def __init__(
         self,
         itens: List[Dict['produto':Produto, 'quantidade':int]],
@@ -29,9 +29,9 @@ class OrdemVenda:
         return round(total, 2)
 
 
-class OrdemVendaNaoExiste(Exception):
+class VendaNaoExiste(Exception):
     pass
 
 
-class OrdemVendaJaExiste(Exception):
+class VendaJaExiste(Exception):
     pass
