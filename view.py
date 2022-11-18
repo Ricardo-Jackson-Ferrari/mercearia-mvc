@@ -1,3 +1,4 @@
+import os
 from time import sleep
 
 import controllers
@@ -10,17 +11,17 @@ if __name__ == '__main__':
                 menu = int(
                     input(
                         """Escolha uma opção de acordo com o número a esquerda
-                [1] acessar (Categoria produto)
-                [2] acessar (Produto)
-                [3] acessar (Estoque)
-                [4] acessar (Categoria fornecedor)
-                [5] acessar (Fornecedor)
-                [6] acessar (Cliente)
-                [7] acessar (Cargo Funcionário)
-                [8] acessar (Funcionario)
-                [9] acessar (Venda)
-                [0] para sair
-                """
+[1] acessar (Categoria produto)
+[2] acessar (Produto)
+[3] acessar (Estoque)
+[4] acessar (Categoria fornecedor)
+[5] acessar (Fornecedor)
+[6] acessar (Cliente)
+[7] acessar (Cargo Funcionário)
+[8] acessar (Funcionario)
+[9] acessar (Venda)
+[0] para sair
+"""
                     )
                 )
                 break
@@ -39,18 +40,18 @@ if __name__ == '__main__':
                             opcao = int(
                                 input(
                                     """Escolha uma opção de acordo com o número a esquerda
-                            [1] cadastrar (Categoria produto)
-                            [2] remover (Categoria produto)
-                            [3] alterar (Categoria produto)
-                            [4] mostrar (Categoria produto)
-                            [5] para sair
-                            """
+[1] cadastrar (Categoria produto)
+[2] remover (Categoria produto)
+[3] alterar (Categoria produto)
+[4] mostrar (Categoria produto)
+[5] para sair
+"""
                                 )
                             )
                             break
                         except ValueError:
                             Mensagem.vermelha('Opção inválida.')
-
+                    os.system('cls||clear')
                     match opcao:
                         case 1:
                             controller.cadastrar(
@@ -83,12 +84,12 @@ if __name__ == '__main__':
                             opcao = int(
                                 input(
                                     """Escolha uma opção de acordo com o número a esquerda
-                            [1] cadastrar (Produto)
-                            [2] remover (Produto)
-                            [3] alterar (Produto)
-                            [4] mostrar (Produto)
-                            [5] para sair
-                            """
+[1] cadastrar (Produto)
+[2] remover (Produto)
+[3] alterar (Produto)
+[4] mostrar (Produto)
+[5] para sair
+"""
                                 )
                             )
                             break
@@ -136,12 +137,12 @@ if __name__ == '__main__':
                             opcao = int(
                                 input(
                                     """Escolha uma opção de acordo com o número a esquerda
-                            [1] cadastrar (Estoque)
-                            [2] remover (Estoque)
-                            [3] alterar (Estoque)
-                            [4] mostrar (Estoque)
-                            [5] para sair
-                            """
+[1] cadastrar (Estoque)
+[2] remover (Estoque)
+[3] alterar (Estoque)
+[4] mostrar (Estoque)
+[5] para sair
+"""
                                 )
                             )
                             break
@@ -180,12 +181,12 @@ if __name__ == '__main__':
                             opcao = int(
                                 input(
                                     """Escolha uma opção de acordo com o número a esquerda
-                            [1] cadastrar (Categoria fornecedor)
-                            [2] remover (Categoria fornecedor)
-                            [3] alterar (Categoria fornecedor)
-                            [4] mostrar (Categoria fornecedor)
-                            [5] para sair
-                            """
+[1] cadastrar (Categoria fornecedor)
+[2] remover (Categoria fornecedor)
+[3] alterar (Categoria fornecedor)
+[4] mostrar (Categoria fornecedor)
+[5] para sair
+"""
                                 )
                             )
                             break
@@ -223,12 +224,12 @@ if __name__ == '__main__':
                             opcao = int(
                                 input(
                                     """Escolha uma opção de acordo com o número a esquerda
-                            [1] cadastrar (Fornecedor)
-                            [2] remover (Fornecedor)
-                            [3] alterar (Fornecedor)
-                            [4] mostrar (Fornecedor)
-                            [5] para sair
-                            """
+[1] cadastrar (Fornecedor)
+[2] remover (Fornecedor)
+[3] alterar (Fornecedor)
+[4] mostrar (Fornecedor)
+[5] para sair
+"""
                                 )
                             )
                             break
@@ -283,12 +284,12 @@ if __name__ == '__main__':
                             opcao = int(
                                 input(
                                     """Escolha uma opção de acordo com o número a esquerda
-                            [1] cadastrar (Cliente)
-                            [2] remover (Cliente)
-                            [3] alterar (Cliente)
-                            [4] mostrar (Cliente)
-                            [5] para sair
-                            """
+[1] cadastrar (Cliente)
+[2] remover (Cliente)
+[3] alterar (Cliente)
+[4] mostrar (Cliente)
+[5] para sair
+"""
                                 )
                             )
                             break
@@ -339,12 +340,12 @@ if __name__ == '__main__':
                             opcao = int(
                                 input(
                                     """Escolha uma opção de acordo com o número a esquerda
-                            [1] cadastrar (Cargo funcionário)
-                            [2] remover (Cargo funcionário)
-                            [3] alterar (Cargo funcionário)
-                            [4] mostrar (Cargo funcionário)
-                            [5] para sair
-                            """
+[1] cadastrar (Cargo funcionário)
+[2] remover (Cargo funcionário)
+[3] alterar (Cargo funcionário)
+[4] mostrar (Cargo funcionário)
+[5] para sair
+"""
                                 )
                             )
                             break
@@ -382,12 +383,12 @@ if __name__ == '__main__':
                             opcao = int(
                                 input(
                                     """Escolha uma opção de acordo com o número a esquerda
-                            [1] cadastrar (Funcionario)
-                            [2] remover (Funcionario)
-                            [3] alterar (Funcionario)
-                            [4] mostrar (Funcionario)
-                            [5] para sair
-                            """
+[1] cadastrar (Funcionario)
+[2] remover (Funcionario)
+[3] alterar (Funcionario)
+[4] mostrar (Funcionario)
+[5] para sair
+"""
                                 )
                             )
                             break
@@ -444,11 +445,11 @@ if __name__ == '__main__':
                             opcao = int(
                                 input(
                                     """Escolha uma opção de acordo com o número a esquerda
-                            [1] cadastrar (Venda)
-                            [2] mostrar (Venda)
-                            [3] mostrar relatório (Venda)
-                            [4] para sair
-                            """
+[1] cadastrar (Venda)
+[2] mostrar (Venda)
+[3] mostrar relatório (Venda)
+[4] para sair
+"""
                                 )
                             )
                             break
