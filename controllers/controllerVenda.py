@@ -121,7 +121,9 @@ class ControllerVenda:
                         relatorio,
                     )
                 )
-        relatorio_ordenado = sorted(relatorio, key=lambda k: k['produto'].nome)
+        relatorio_ordenado = sorted(
+            relatorio, key=lambda k: k['quantidade'], reverse=True
+        )
 
         tabela = Table(title='Relatório venda produtos', show_lines=True)
         tabela.add_column('Produto')
